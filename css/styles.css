@@ -529,6 +529,7 @@ header {
 /* Footer section */
 
 footer {
+  width: 100%;
   left: 0px;
   background: #2f303a;
 }
@@ -547,10 +548,8 @@ padding-bottom: 60px;
   margin-right: 70px;
 }
 
-.footer-right {
-  display: block;
-  flex-grow: 1;
-  
+.footer-center {
+  margin-right: 93px;
 }
 
 .footer-block-logo {
@@ -577,7 +576,6 @@ padding-bottom: 60px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 .adress {
@@ -635,7 +633,58 @@ padding-bottom: 60px;
   color: var(--third-text-color);
 }
 
-/* Modal */
+.footer-subscription {
+  display: flex;
+  align-items: center;
+
+}
+
+/* ----------Subscrib part----------  */
+
+.modal-footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+}
+
+.modal-footer-input::placeholder {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.modal-footer-btn {
+  margin: 0 auto;
+  color: var(--third-text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.footer-send-icon {
+  margin-left: 10px;
+  fill: var(--third-text-color);
+}
+
+.modal-footer-btn:hover,
+.modal-footer-btn:focus {
+  background-color: #188CE8;
+}
+
+
+/* -----------------Modal */
 
 .backdrop {
   width: 100vw;
@@ -831,7 +880,7 @@ padding-bottom: 60px;
   pointer-events: none;
 }
 
-/* Portfolio */
+/* -----------------Portfolio */
 
 .portfolio-header {
   border-bottom: 1px solid #ECECEC;
