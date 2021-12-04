@@ -650,6 +650,7 @@ padding-bottom: 60px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  color: var(--third-text-color);
   outline: none;
   margin-right: 12px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -661,7 +662,7 @@ padding-bottom: 60px;
 }
 
 .modal-footer-input::placeholder {
-  font-weight: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.25;
   display: flex;
@@ -671,13 +672,13 @@ padding-bottom: 60px;
 }
 
 .modal-footer-btn {
+  font-weight: 700;
   margin: 0 auto;
   color: var(--third-text-color);
   display: flex;
   align-items: center;
   justify-content: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .footer-send-icon {
@@ -723,6 +724,24 @@ padding-bottom: 60px;
   transform: scale(1) translate(-50%, -50%);
   transition: transform 250ms;
   padding: 40px;
+}
+
+.modal-windows-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.modal-windows-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-windows-icon:hover,
@@ -791,7 +810,6 @@ padding-bottom: 60px;
   transform: translateY(-50%);
   left: 5px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .modal-form-input:last-child {
@@ -808,6 +826,7 @@ padding-bottom: 60px;
   outline: none;
   background-color: transparent;
   color: var(--second-text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus {
@@ -837,7 +856,7 @@ padding-bottom: 60px;
   width: 16px;
   height: 15px;
   border: 2px solid #212121;
-  margin-right: 5px; 
+  margin-right: 7px; 
   border-radius: 2px;
   display: flex;
   align-items: center;
@@ -857,21 +876,12 @@ padding-bottom: 60px;
   color: var(--accent-color);
 }
 
-.modal-windows-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--main-background-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.modal-checkbox {
+  margin-left: 13px;
 }
 
 .modal-btn {
+  font-weight: 700;
   margin-top: 30px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
