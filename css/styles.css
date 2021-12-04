@@ -650,7 +650,14 @@ padding-bottom: 60px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: transparent;
+  outline: none;
   margin-right: 12px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-footer-input:focus {
+  border-color: var(--third-text-color);
 }
 
 .modal-footer-input::placeholder {
